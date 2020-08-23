@@ -1,12 +1,14 @@
-public class Funcionario {
+package herancainterface;
+
+public abstract class Funcionario {
 
 	private String nome;
 	private String cpf;
 	private double salario;
 
-	public double getBonificacao() {
-		return this.salario * 0.1;
-	}
+	public abstract double getBonificacao(); 
+		
+	
 
 	public String getNome() {
 		return nome;
