@@ -8,6 +8,8 @@ package br.com.bytebank.banco.test.util;
 import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 /**
  *
@@ -17,7 +19,7 @@ public class TesteArrayList {
     
     public static void main(String[] args) {
         //Generics
-        ArrayList<Conta> lista = new ArrayList<Conta>();
+        List<Conta> lista = new ArrayList<Conta>();
         
         Conta cc = new ContaCorrente(222, 2222);
         lista.add(cc);
