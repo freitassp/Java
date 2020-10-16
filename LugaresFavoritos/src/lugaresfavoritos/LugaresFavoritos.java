@@ -37,6 +37,9 @@ public class LugaresFavoritos {
          
          Integer total = cidade.totalAvaliacoes();
         System.out.println(total);
+        
+        Double media = cidade.avaliacaoMedia();
+        System.out.println("Média "+ media );
          
         // System.out.println(cidade.getAvaliacoes().size());
 

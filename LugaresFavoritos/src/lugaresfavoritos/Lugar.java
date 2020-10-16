@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -53,6 +54,20 @@ class Lugar {
 
    public Integer totalAvaliacoes() {
         return this.avaliacoes.size();
+    }
+
+    public Double avaliacaoMedia() {
+        Double soma = somaDasAvaliacoes();
+        Double media = soma/totalAvaliacoes();
+        return media;
+    }
+
+    private Double somaDasAvaliacoes() {
+        Double soma = 0d;
+        for (Integer avaliacao : avaliacoes) {
+            soma += avaliacao;
+        }
+        return soma;
     }
   
   
