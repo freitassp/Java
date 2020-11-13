@@ -5,6 +5,9 @@
  */
 package br.com.alura;
 
+import java.util.Iterator;
+import java.util.Set;
+
 /**
  *
  * @author Samuel
@@ -30,10 +33,30 @@ public class TestaCursoComAluno {
         javaColecoes.matricula(a3);
         
         System.out.println("Todos alunos matriculados: ");
-        javaColecoes.getAlunos().forEach(a -> {
-            System.out.println(a);
-        });
         
+       
+        Set<Aluno> alunos = javaColecoes.getAlunos();
+        Iterator<Aluno> iterator = alunos.iterator();
+        
+        while(iterator.hasNext()){
+            
+            Aluno proximo = iterator.next();
+            System.out.println(proximo);
+        }
+        
+        
+        
+        
+//        javaColecoes.getAlunos().forEach(a -> {
+//            System.out.println(a);
+//        });// a partir d java 8
+        
+        
+//        for (Aluno a : javaColecoes.getAlunos()) {
+//            System.out.println(a);
+//        } uma das formas de iterar
+
+
         
         
         

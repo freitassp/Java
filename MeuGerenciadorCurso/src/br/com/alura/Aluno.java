@@ -26,6 +26,10 @@ public class Aluno {
         return nome;
     }
 
+    public int getMatricula() {
+        return matricula;
+    }
+
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -39,7 +43,7 @@ public class Aluno {
 
     @Override
     public int hashCode() {
-        return this.nome.charAt(0);
+        return this.nome.hashCode();
     }
 
     
